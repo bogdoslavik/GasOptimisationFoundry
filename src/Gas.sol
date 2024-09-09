@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "./Ownable.sol";
 
 contract GasContract is Ownable {
-    uint256 public immutable totalSupply = 0; // cannot be updated
+    uint256 public immutable totalSupply; // cannot be updated
     address public immutable contractOwner;
 
     uint private constant _administratorsLength = 5;
